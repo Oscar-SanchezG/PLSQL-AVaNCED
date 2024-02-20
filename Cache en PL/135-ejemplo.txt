@@ -1,0 +1,5 @@
+SELECT * FROM V$RESULT_CACHE_STATISTICS;
+
+select * from table(dbms_xplan.display_cursor(sql_id=>'08hvxxy2cmcqa', format=>'ALLSTATS LAST'));
+
+SELECT * FROM V$RESULT_CACHE_OBJECTS WHERE CACHE_ID='gmr0u86vu0hnu8xyq7mak3txkp';
